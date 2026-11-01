@@ -47,17 +47,18 @@ def load_random_forest():
 
 @st.cache_resource
 def load_transformer(folder_name):
-    HF_REPO_ID = "mommineedi/women-stress-nlp-models"
+    """Load a transformer model from the public Hugging Face repository."""
+    hf_repo_id = "mommineedi/women-stress-nlp-models"
 
-tokenizer = AutoTokenizer.from_pretrained(
-    HF_REPO_ID,
-    subfolder=folder_name
-)
+    tokenizer = AutoTokenizer.from_pretrained(
+        hf_repo_id,
+        subfolder=folder_name,
+    )
 
-model = AutoModelForSequenceClassification.from_pretrained(
-    HF_REPO_ID,
-    subfolder=folder_name
-)
+    model = AutoModelForSequenceClassification.from_pretrained(
+        hf_repo_id,
+        subfolder=folder_name,
+    )
 
     model.to(DEVICE)
     model.eval()
