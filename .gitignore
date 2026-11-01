@@ -1,0 +1,17 @@
+@"
+.venv/
+.venv-1/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+
+# Dataset
+data/
+
+# Large model weights
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+"@ | Set-Content -Encoding utf8 .gitignore

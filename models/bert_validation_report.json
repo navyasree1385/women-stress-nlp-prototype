@@ -1,0 +1,50 @@
+{
+  "model": "bert-base-uncased",
+  "training_samples": 300,
+  "validation_samples": 570,
+  "epochs": 1,
+  "max_length": 64,
+  "accuracy": 0.7,
+  "precision": 0.7286135693215339,
+  "recall": 0.7576687116564417,
+  "f1_score": 0.7428571428571429,
+  "roc_auc": 0.7773685004525797,
+  "confusion_matrix": [
+    [
+      152,
+      92
+    ],
+    [
+      79,
+      247
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.658008658008658,
+      "recall": 0.6229508196721312,
+      "f1-score": 0.64,
+      "support": 244.0
+    },
+    "1": {
+      "precision": 0.7286135693215339,
+      "recall": 0.7576687116564417,
+      "f1-score": 0.7428571428571429,
+      "support": 326.0
+    },
+    "accuracy": 0.7,
+    "macro avg": {
+      "precision": 0.693311113665096,
+      "recall": 0.6903097656642865,
+      "f1-score": 0.6914285714285715,
+      "support": 570.0
+    },
+    "weighted avg": {
+      "precision": 0.6983897125490046,
+      "recall": 0.7,
+      "f1-score": 0.6988270676691729,
+      "support": 570.0
+    }
+  },
+  "training_seconds": 807.09
+}
